@@ -1,0 +1,7 @@
+#!/bin/bash
+#lxpanel &
+LIBGL_ALWAYS_INDIRECT=1 compiz --replace --sm-disable ccp &
+#compiz --replace --sm-disable ccp &
+emerald --replace &
+sleep 1 &
+conky

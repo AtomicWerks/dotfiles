@@ -1,0 +1,308 @@
+ <menu id="Accessories" label="Accessories">
+      <item label="7-Zip FM">
+       <action name="Execute"><execute>7zFM</execute></action>
+     </item>
+      <item label="Archive Manager">
+       <action name="Execute"><execute>file-roller </execute></action>
+     </item>
+      <item label="Image Viewer" icon="/usr/share/pixmaps/gpicview.png">
+       <action name="Execute"><execute>gpicview </execute></action>
+     </item>
+      <item label="Screenlets">
+       <action name="Execute"><execute>screenlets-manager > /dev/null</execute></action>
+     </item>
+      <item label="Screenshot">
+       <action name="Execute"><execute>gnome-screenshot --interactive</execute></action>
+     </item>
+      <item label="Xarchiver">
+       <action name="Execute"><execute>xarchiver</execute></action>
+     </item>
+      <item label="aafm">
+       <action name="Execute"><execute>aafm</execute></action>
+     </item>
+      <item label="compton">
+       <action name="Execute"><execute>compton</execute></action>
+     </item>
+ </menu> <!-- Accessories -->
+ <menu id="Archlinux" label="Archlinux">
+      <item label="AUR">
+       <action name="Execute"><execute>xdg-open https://aur.archlinux.org</execute></action>
+     </item>
+      <item label="Bugs">
+       <action name="Execute"><execute>xdg-open https://bugs.archlinux.org</execute></action>
+     </item>
+      <item label="Developers">
+       <action name="Execute"><execute>xdg-open http://www.archlinux.org/developers/</execute></action>
+     </item>
+      <item label="Documentation">
+       <action name="Execute"><execute>xdg-open https://wiki.archlinux.org/index.php/Official_Arch_Linux_Install_Guide</execute></action>
+     </item>
+      <item label="Donate">
+       <action name="Execute"><execute>xdg-open http://www.archlinux.org/donate/</execute></action>
+     </item>
+      <item label="Forum">
+       <action name="Execute"><execute>xdg-open https://bbs.archlinux.org</execute></action>
+     </item>
+      <item label="Homepage">
+       <action name="Execute"><execute>xdg-open http://www.archlinux.org</execute></action>
+     </item>
+      <item label="SVN">
+       <action name="Execute"><execute>xdg-open http://projects.archlinux.org/svntogit/</execute></action>
+     </item>
+      <item label="Schwag">
+       <action name="Execute"><execute>xdg-open http://www.zazzle.com/archlinux/</execute></action>
+     </item>
+      <item label="Wiki">
+       <action name="Execute"><execute>xdg-open https://wiki.archlinux.org</execute></action>
+     </item>
+ </menu> <!-- Archlinux -->
+ <menu id="Games" label="Games">
+      <item label="Amnesia - The Dark Descent" icon="///opt/Amnesia/Amnesia.png">
+       <action name="Execute"><execute>/opt/Amnesia/Launcher.bin64</execute></action>
+     </item>
+      <item label="Amnesia - The Dark Descent - Manual" icon="///opt/Amnesia/AmnesiaPDF.png">
+       <action name="Execute"><execute>xdg-open "file:///opt/Amnesia/Manual_en.pdf"</execute></action>
+     </item>
+      <item label="Amnesia - The Dark Descent - Remember" icon="///opt/Amnesia/AmnesiaPDF.png">
+       <action name="Execute"><execute>xdg-open "file:///opt/Amnesia/Remember - Short Story Collection.pdf"</execute></action>
+     </item>
+      <item label="Desura">
+       <action name="Execute"><execute>desura</execute></action>
+     </item>
+      <item label="Postal 2 Free MP" icon="/usr/share/pixmaps/postal2.xpm">
+       <action name="Execute"><execute>postal2stp-freemp</execute></action>
+     </item>
+ </menu> <!-- Games -->
+ <menu id="Graphics" label="Graphics">
+      <item label="Blender">
+       <action name="Execute"><execute>blender</execute></action>
+     </item>
+      <item label="Darktable">
+       <action name="Execute"><execute>darktable </execute></action>
+     </item>
+      <item label="GNU Image Manipulation Program">
+       <action name="Execute"><execute>gimp-2.8 </execute></action>
+     </item>
+      <item label="Gnofract 4D Fractal Generator" icon="/usr/share/pixmaps/gnofract4d-logo.png">
+       <action name="Execute"><execute>gnofract4d </execute></action>
+     </item>
+      <item label="Image Viewer" icon="/usr/share/pixmaps/gpicview.png">
+       <action name="Execute"><execute>gpicview </execute></action>
+     </item>
+      <item label="Shotwell">
+       <action name="Execute"><execute>shotwell </execute></action>
+     </item>
+ </menu> <!-- Graphics -->
+ <menu id="Internet" label="Internet">
+      <item label="Avahi SSH Server Browser">
+       <action name="Execute"><execute>/usr/bin/bssh</execute></action>
+     </item>
+      <item label="Avahi VNC Server Browser">
+       <action name="Execute"><execute>/usr/bin/bvnc</execute></action>
+     </item>
+      <item label="Chromium">
+       <action name="Execute"><execute>chromium </execute></action>
+     </item>
+      <item label="Ekiga Softphone">
+       <action name="Execute"><execute>ekiga</execute></action>
+     </item>
+      <item label="Firefox">
+       <action name="Execute"><execute>/usr/lib/firefox/firefox </execute></action>
+     </item>
+      <item label="GADMIN-SAMBA" icon="/usr/share/pixmaps/gadmin-samba.png">
+       <action name="Execute"><execute>gadmin-samba-menu</execute></action>
+     </item>
+      <item label="Gnaural" icon="///usr/share/gnaural/pixmaps/gnaural-icon.png">
+       <action name="Execute"><execute>gnaural </execute></action>
+     </item>
+      <item label="Yate VoIP Client" icon="/usr/share/pixmaps/null_team-48.png">
+       <action name="Execute"><execute>yate-qt4</execute></action>
+     </item>
+      <item label="gPodder">
+       <action name="Execute"><execute>gpodder</execute></action>
+     </item>
+ </menu> <!-- Internet -->
+ <menu id="Office" label="Office">
+      <item label="Adobe Reader 9" icon="/usr/share/pixmaps/acroread.png">
+       <action name="Execute"><execute>acroread </execute></action>
+     </item>
+      <item label="LibreOffice">
+       <action name="Execute"><execute>libreoffice </execute></action>
+     </item>
+      <item label="LibreOffice Base">
+       <action name="Execute"><execute>libreoffice --base </execute></action>
+     </item>
+      <item label="LibreOffice Calc">
+       <action name="Execute"><execute>libreoffice --calc </execute></action>
+     </item>
+      <item label="LibreOffice Impress">
+       <action name="Execute"><execute>libreoffice --impress </execute></action>
+     </item>
+      <item label="LibreOffice Writer">
+       <action name="Execute"><execute>libreoffice --writer </execute></action>
+     </item>
+ </menu> <!-- Office -->
+ <menu id="Programming" label="Programming">
+      <item label="Android SDK" icon="/usr/share/pixmaps/android-sdk.png">
+       <action name="Execute"><execute>android</execute></action>
+     </item>
+      <item label="CMake" icon="/usr/share/pixmaps/CMakeSetup32.png">
+       <action name="Execute"><execute>cmake-gui </execute></action>
+     </item>
+      <item label="Geany">
+       <action name="Execute"><execute>geany </execute></action>
+     </item>
+      <item label="OpenJDK Policy Tool">
+       <action name="Execute"><execute>/usr/bin/policytool</execute></action>
+     </item>
+      <item label="Qt4 Assistant ">
+       <action name="Execute"><execute>assistant-qt4</execute></action>
+     </item>
+      <item label="Qt4 Designer">
+       <action name="Execute"><execute>designer-qt4</execute></action>
+     </item>
+      <item label="Qt4 Linguist ">
+       <action name="Execute"><execute>linguist-qt4</execute></action>
+     </item>
+ </menu> <!-- Programming -->
+ <menu id="Science &amp; Math" label="Science &amp; Math">
+      <item label="Gnofract 4D Fractal Generator" icon="/usr/share/pixmaps/gnofract4d-logo.png">
+       <action name="Execute"><execute>gnofract4d </execute></action>
+     </item>
+ </menu> <!-- Science & Math -->
+ <menu id="Sound &amp; Video" label="Sound &amp; Video">
+      <item label="Ardour 3" icon="///usr/share/ardour3/icons/ardour_icon_48px.png">
+       <action name="Execute"><execute>ardour3</execute></action>
+     </item>
+      <item label="Ario">
+       <action name="Execute"><execute>ario</execute></action>
+     </item>
+      <item label="Audacity" icon="/usr/share/pixmaps/audacity.xpm">
+       <action name="Execute"><execute>audacity </execute></action>
+     </item>
+      <item label="DeaDBeeF">
+       <action name="Execute"><execute>deadbeef </execute></action>
+     </item>
+      <item label="EasyTAG">
+       <action name="Execute"><execute>easytag </execute></action>
+     </item>
+      <item label="Gnaural" icon="///usr/share/gnaural/pixmaps/gnaural-icon.png">
+       <action name="Execute"><execute>gnaural </execute></action>
+     </item>
+      <item label="JACK Rack" icon="/usr/share/pixmaps/jack-rack-icon.png">
+       <action name="Execute"><execute>jack-rack</execute></action>
+     </item>
+      <item label="JAMin">
+       <action name="Execute"><execute>jamin</execute></action>
+     </item>
+      <item label="MPlayer" icon="/usr/share/pixmaps/mplayer.xpm">
+       <action name="Execute"><execute>mplayer </execute></action>
+     </item>
+      <item label="PNMixer">
+       <action name="Execute"><execute>pnmixer</execute></action>
+     </item>
+      <item label="PulseAudio Equalizer">
+       <action name="Execute"><execute>pulseaudio-equalizer-gtk</execute></action>
+     </item>
+      <item label="PulseAudio System Tray" icon="/usr/share/pixmaps/pasystray.png">
+       <action name="Execute"><execute>pasystray</execute></action>
+     </item>
+      <item label="PulseAudio Volume Control">
+       <action name="Execute"><execute>pavucontrol</execute></action>
+     </item>
+      <item label="PulseAudio Volume Meter (Capture)" icon="///usr/share/icons/gnome/24x24/devices/audio-input-microphone.png">
+       <action name="Execute"><execute>pavumeter --record</execute></action>
+     </item>
+      <item label="PulseAudio Volume Meter (Playback)" icon="///usr/share/icons/gnome/24x24/devices/audio-input-microphone.png">
+       <action name="Execute"><execute>pavumeter</execute></action>
+     </item>
+      <item label="QT V4L2 test Utility">
+       <action name="Execute"><execute>qv4l2</execute></action>
+     </item>
+      <item label="QjackCtl">
+       <action name="Execute"><execute>/usr/bin/qjackctl</execute></action>
+     </item>
+      <item label="SMPlayer">
+       <action name="Execute"><execute>smplayer </execute></action>
+     </item>
+      <item label="gMTP" icon="/usr/share/pixmaps/gMTPicon.png">
+       <action name="Execute"><execute>gmtp</execute></action>
+     </item>
+      <item label="gPodder">
+       <action name="Execute"><execute>gpodder</execute></action>
+     </item>
+      <item label="gtk-recordMyDesktop" icon="/usr/share/pixmaps/gtk-recordmydesktop.png">
+       <action name="Execute"><execute>gtk-recordMyDesktop</execute></action>
+     </item>
+      <item label="projectM PulseAudio Visualization" icon="/usr/share/pixmaps/prjm16-transparent.svg">
+       <action name="Execute"><execute>projectM-pulseaudio</execute></action>
+     </item>
+ </menu> <!-- Sound & Video -->
+ <menu id="System Tools" label="System Tools">
+      <item label="Avahi Zeroconf Browser">
+       <action name="Execute"><execute>/usr/bin/avahi-discover</execute></action>
+     </item>
+      <item label="Bulk Rename">
+       <action name="Execute"><execute>/usr/lib/Thunar/ThunarBulkRename </execute></action>
+     </item>
+      <item label="CPU-G" icon="///usr/share/cpu-g/data/cpu-g.png">
+       <action name="Execute"><execute>xdg_menu_su /usr/bin/cpu-g</execute></action>
+     </item>
+      <item label="Cairo Composite Manager" icon="///usr/share/pixmaps/cairo-compmgr/cairo-compmgr.png">
+       <action name="Execute"><execute>cairo-compmgr</execute></action>
+     </item>
+      <item label="Cairo-Dock (no OpenGL)" icon="/usr/share/pixmaps/cairo-dock.svg">
+       <action name="Execute"><execute>cairo-dock -A</execute></action>
+     </item>
+      <item label="Compiz Fusion Icon">
+       <action name="Execute"><execute>fusion-icon</execute></action>
+     </item>
+      <item label="GLX-Dock (Cairo-Dock with OpenGL)" icon="/usr/share/pixmaps/cairo-dock.svg">
+       <action name="Execute"><execute>cairo-dock</execute></action>
+     </item>
+      <item label="GParted">
+       <action name="Execute"><execute> /usr/sbin/gparted </execute></action>
+     </item>
+      <item label="LSHW" icon="///usr/share/lshw/artwork/logo.svg">
+       <action name="Execute"><execute>/usr/sbin/gtk-lshw</execute></action>
+     </item>
+      <item label="Oracle VM VirtualBox">
+       <action name="Execute"><execute>VirtualBox </execute></action>
+     </item>
+      <item label="Services">
+       <action name="Execute"><execute>systemadm</execute></action>
+     </item>
+      <item label="System Profiler and Benchmark" icon="///usr/share/hardinfo/pixmaps/logo.png">
+       <action name="Execute"><execute>hardinfo</execute></action>
+     </item>
+      <item label="Thunar File Manager">
+       <action name="Execute"><execute>thunar </execute></action>
+     </item>
+      <item label="UNetbootin">
+       <action name="Execute"><execute>/usr/bin/unetbootin</execute></action>
+     </item>
+      <item label="UXTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+       <action name="Execute"><execute>uxterm</execute></action>
+     </item>
+      <item label="Wireshark">
+       <action name="Execute"><execute>wireshark </execute></action>
+     </item>
+      <item label="XSensors" icon="///usr/share/pixmaps/xsensors/default.xpm">
+       <action name="Execute"><execute>/usr/bin/xsensors</execute></action>
+     </item>
+      <item label="XTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+       <action name="Execute"><execute>xterm</execute></action>
+     </item>
+      <item label="dconf Editor">
+       <action name="Execute"><execute>dconf-editor</execute></action>
+     </item>
+      <item label="urxvt">
+       <action name="Execute"><execute>urxvt</execute></action>
+     </item>
+      <item label="urxvt (client)">
+       <action name="Execute"><execute>urxvtc</execute></action>
+     </item>
+      <item label="urxvt (tabbed)">
+       <action name="Execute"><execute>urxvt-tabbed</execute></action>
+     </item>
+ </menu> <!-- System Tools -->

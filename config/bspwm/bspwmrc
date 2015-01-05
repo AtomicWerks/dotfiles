@@ -1,0 +1,31 @@
+#! /bin/sh
+
+desktop_config() {
+	bspc config $1 $2
+	for M in $(bspc query -M); do
+		bspc config -m $M $1 $2
+	done
+}
+
+desktop_config border_width     1
+desktop_config window_gap      30
+
+bspc config split_ratio         0.52
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config focus_follows_pointer true
+bspc config top_padding 50
+bspc config right_padding 50
+bspc config left_padding 50
+bspc config bottom_padding 50
+
+bspc monitor DVI-0 -d ▀▄ ▀▄ ▀▄
+bspc monitor VGA-0 -d ▀▄ ▀▄ ▀▄
+
+#bspc monitor -d www i ii iii iv mail term
+#${HOME}/.config/bspwm/panel
+#${HOME}/.barscripts/panel
+thunar --daemon &
+tint2 &
+pasystray &
+nm-applet --sm-disable

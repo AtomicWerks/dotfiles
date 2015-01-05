@@ -1,0 +1,139 @@
+#
+# bspwm hotkeys
+#
+
+# Quit
+super + shift + q
+  bspc quit && pkill panel 
+
+# Close Focused Window
+super + w
+  bspc window -c
+
+# Cycle Desktop Layout
+super + t
+  bspc desktop -l next
+
+# Balance Selected Desktop
+super + b
+  bspc desktop -B
+
+# Mirror and flip leaves of tree
+alt + {comma,period}
+	bspc desktop -F {horizontal,vertical}
+
+# Rotate leaves of tree
+alt + shift + {comma,period}
+	bspc desktop -R {90,270}
+	
+super + {s,f}
+  bspc window -t {floating,fullscreen}
+
+super + {grave,Tab}
+  bspc {window,desktop} -f last
+
+super + apostrophe
+  bspc window -s last
+
+super + {o,i}
+  bspc control --record-history off; \
+  bspc window {older,newer} -f; \
+  bspc control --record-history on
+
+super + y
+  bspc window -w last.manual
+
+super + m
+  bspc window -s biggest
+
+super + {_,shift + }{h,j,k,l}
+  bspc window -{f,s} {left,down,up,right}
+
+super + {_,shift + }c
+  bspc window -f {next,prev}
+
+super + {comma,period}
+  bspc desktop -C {backward,forward}
+
+super + bracket{left,right}
+  bspc desktop -f {prev,next}
+
+super + ctrl + {h,j,k,l}
+  bspc window -p {left,down,up,right}
+
+super + ctrl + {_,shift + }space
+  bspc {window -p cancel,desktop -c}
+
+#super + alt + {h,j,k,l}
+#  bspc window -e {left,down,up,right} push
+
+#super + alt + shift + {h,j,k,l}
+#  bspc window -e {right,up,down,left} pull
+
+super + ctrl + {1-9}
+  bspc window -r 0.{1-9}
+
+# Select Desktop, Send Selected Window to Desktop
+super + {_,shift + }{1-9,0}
+  bspc {desktop -f,window -d} ^{1-9,10}
+
+~button1
+  bspc pointer -g focus
+
+super + button{1-3}
+  bspc pointer -g {move,resize_side,resize_corner}
+
+super + !button{1-3}
+  bspc pointer -t %i %i
+
+super + @button{1-3}
+  bspc pointer -u
+  
+# Increase the size of the focused window
+super + alt + {h,j,k,l}
+	bspc window -e {left -10,down +10,up -10,right +10}
+# Reduce the size of the focused windows
+super + alt + shift + {h,j,k,l}
+	bspc window -e {right -10,up +10,down -10,left +10}
+# Change desktop padding
+alt + {_, shift} + bracketright
+	bspc config -d focused right_padding $((`bspc config -d focused right_padding` {+,-} 20 ))
+
+alt + {_, shift} + bracketleft
+	bspc config -d focused left_padding $((`bspc config -d focused left_padding` {+,-} 20 ))
+
+ctrl + {_, shift} + bracketright
+	bspc config -d focused bottom_padding $((`bspc config -d focused bottom_padding` {+,-} 20 ))
+
+ctrl + {_, shift} + bracketleft
+	bspc config -d focused top_padding $((`bspc config -d focused top_padding` {+,-} 20 ))
+
+alt + shift + {minus,equal}
+	bspc config -d focused right_padding $((`bspc config -d focused right_padding` {+,-} 20 )); \
+	bspc config -d focused left_padding $((`bspc config -d focused left_padding` {+,-} 20 )); \
+	bspc config -d focused bottom_padding $((`bspc config -d focused bottom_padding` {+,-} 20 )); \
+	bspc config -d focused top_padding $((`bspc config -d focused top_padding` {+,-} 20 ));
+
+
+# Change window gap
+alt + {minus,equal}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 2 ))
+
+#
+# wm independent hotkeys
+#
+
+super + Return
+  urxvt
+
+super + d
+  ${HOME}/.config/bspwm/dmenuwrapper
+
+super + x
+  i3lock
+
+alt + space
+  ${HOME}/.config/bspwm/dmenuwrapper2
+# make sxhkd reload its configuration files:
+super + Escape
+  pkill -USR1 -x sxhkd

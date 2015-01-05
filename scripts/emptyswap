@@ -1,0 +1,7 @@
+#!/bin/bash
+echo -e "\nOutput of free before:"
+free
+swapoff -a ; swapon -a
+echo -e "\nOutput of free after:"
+free
+echo ""
