@@ -1,0 +1,127 @@
+####################################################
+## this is example configuration file, copy it to ##
+## ~/.ncmpcpp/config and set up your preferences  ##
+####################################################
+#
+##### directories ######
+##
+## Directory for storing ncmpcpp related files.
+## Changing it is useful if you want to store
+## everything somewhere else and provide command
+## line setting for alternative location to config
+## file which defines that while launching ncmpcpp.
+##
+#
+ncmpcpp_directory = ~/.ncmpcpp
+#
+##
+## Directory for storing downloaded lyrics. It
+## defaults to ~/.lyrics since other MPD clients
+## (eg. ncmpc) also use that location.
+##
+#
+lyrics_directory = ~/.lyrics
+#
+##### connection settings #####
+#
+mpd_host = localhost
+#
+mpd_port = 6600
+#
+mpd_connection_timeout = 5
+#
+## Needed for tag editor and file operations to work.
+##
+mpd_music_dir = /media/sarai/music
+#
+mpd_crossfade_time = 5
+
+
+visualizer_in_stereo = no
+
+
+incremental_seeking = yes
+#
+#seek_time = 1
+#
+#volume_change_step = 2
+#
+
+ignore_leading_the = yes
+
+mouse_support = yes
+
+
+# ------
+# Delays  
+# ------
+playlist_disable_highlight_delay = "2"
+message_delay_time = "1"
+ 
+# Playlist
+song_list_format = "$7[$4%n$7]$9 $7[$9$3%l$7]$9 $1|$9 $7%a$9 $1|$9 $2%t$9 $R $5%b$9"
+song_columns_list_format = "(13)[green]{l} (35)[red]{t|f} (30)[blue]{a} (25)[cyan]{b} "
+now_playing_prefix = "$b$5»$9»$2»$1»                         "
+#now_playing_prefix = "$b$5»$7»$1»                                                "
+#now_playing_suffix = "$/b"
+playlist_display_mode = "columns" (classic/columns)
+autocenter_mode = "yes"
+centered_cursor = "yes"
+cyclic_scrolling = "yes"
+display_bitrate = "yes"
+ 
+# Clock
+clock_display_seconds = "yes"
+ 
+# Bars
+song_status_format = "$2%a $8• $3%t $8• $4%b {(Disc %d) }$8• $5%y$8"
+progressbar_look = "─╼ "
+#progressbar_look = "─▰ "
+ 
+titles_visibility = "no"
+header_visibility = "no"
+statusbar_visibility = "yes"
+ 
+# Browser
+browser_playlist_prefix = "$2plist »$9 "
+browser_display_mode = "columns" #(classic/columns)
+ 
+# Colors
+discard_colors_if_item_is_selected = "no"
+header_window_color = "black"
+volume_color = "cyan"
+state_line_color = "black"
+state_flags_color = "blue"
+main_window_color = "white"
+color1 = "default"
+color2 = "green"
+main_window_highlight_color = "red"
+progressbar_color = "black"
+statusbar_color = "black"
+active_column_color = "red"
+ 
+ 
+alternative_ui_separator_color = "yellow"
+active_window_border = "black"
+ 
+alternative_header_first_line_format = "$b$1$aqqu$/a$2 {%t}|{%f} $1$atqq$/a$5$/b$8"
+ 
+ 
+alternative_header_second_line_format = "{{$6$b%a$/b$9}{ - $7%b$9}{ $5($4%y$9)}}|{%D}"
+ 
+# Others
+song_window_title_format = "MPD: {%a > }{%t}{ [%b{ Disc %d}]}|{%f}"
+search_engine_display_mode = "columns" #(classic/columns)
+follow_now_playing_lyrics = "yes"
+ 
+# ----------
+# Visualizer
+# ----------
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "visual"
+visualizer_sync_interval = "30"
+visualizer_type = "spectrum" (spectrum/wave)
+visualizer_color = "black"
+visualizer_look = "●▋"
+ 
+colors_enabled = "yes"

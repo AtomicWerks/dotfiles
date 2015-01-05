@@ -1,0 +1,13 @@
+#!/bin/sh
+/usr/bin/xcalib -d :0 /home/stephen/.color/icc/dell_u2211h.icc &
+xrdb -load /home/stephen/.Xresources &
+xsetroot -cursor_name left_ptr &
+numlockx &
+smount -a &
+#export DE="gnome" &
+#nitrogen --restore &
+#compton --config /home/stephen/.config/Compton/compton.conf &
+
+#urxvt-tabbed &
+exec dbus-launch openbox-session
+#exec ck-launch-session dbus-launch $HOME/scripts/.start-fusion.sh

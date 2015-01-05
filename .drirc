@@ -1,0 +1,6 @@
+<driconf>
+    <device screen="0" driver="r600">
+        <application name="all">
+        </application>
+    </device>
+</driconf>

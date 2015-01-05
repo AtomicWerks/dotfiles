@@ -1,0 +1,224 @@
+
+Xft.dpi:                96
+Xft.antialias:          1
+Xft.hinting:            1
+Xft.hintstyle: 			hintfull
+Xft.lcdfilter: 			lcddefault
+Xft.rgba: 				rgb
+
+
+
+URxvt*iconFile: /usr/share/icons/AwOkenWhite/clear/24x24/apps/terminal1.png
+mouseWheelScrollPage: true
+
+URxvt*perl-ext-common:      default,matcher,searchable-scrollback
+URxvt*matcher.button:       1
+!URxvt*matcher.pattern.1:    \bwww\.[\w-]\.[\w./?&@#-]*[\w/-]
+URxvt.url-launcher:    /usr/bin/chromium
+URxvt*perl-lib: /usr/lib/urxvt/perl/
+URxvt*cursorUnderline: true
+URxvt*colorMode: on
+URxvt*scrollTtyKeypress: 1
+URxvt*scrollTtyOutput: 0
+URxvt*loginShell: true
+URxvt*colorUL:            #86A2BE
+URxvt*underlineColor:     #86A2BE
+
+! for solarized color scheme
+URxvt.intensityStyles: false
+!
+
+    URxvt*termName: rxvt-unicode-256color
+
+    /* borderless and no scrollbar */
+    URxvt*scrollBar_right: false
+    URxvt*scrollBar: false
+    URxvt*borderLess: false
+
+    /* teh transparency stuff */
+!    URxvt*transparent: false
+!    URxvt*inheritPixmap: true
+!    URxvt*tintColor: white
+!    URxvt*shading: 60
+!     URxvt*.depth: 32
+!     URxvt.background: rgba:0200/0000/0000/9999
+
+!     URxvt.background: [90]#000000
+
+
+!     URxvt.background: [100]#000000
+     URxvt.background: [100]#1f1f1f
+
+!     URxvt.fading: 0
+    /* geometry and font */
+!    URxvt.font:             -*-gohufont-medium-*-*-*-14-*-*-*-*-*-*-*
+!    URxvt.font:             -*-terminus-medium-r-*-*-14-140-*-*-*-*-*-*
+!    URxvt.boldfont:         -*-terminus-bold-r-*-*-14-140-*-*-*-*-*-*
+!    URxvt*font: xft:SourceCodePro:medium:pixelsize=14:
+    URxvt*geometry: 75x50
+!    URxvt*boldfont: xft:Inconsolata:size=16:
+    URxvt*cursorColor: 002b36
+    URxvt*font: xft:Sauce Code Powerline:style=Regular:pixelsize=12
+!    URxvt*boldfont: xft:Terminus:bold:pixelsize=12:
+!    URxvt.letterSpace: -1
+    URxvt.lineSpace: -1
+    /* change default colors */
+!    URxvt*background: #000000
+!   URxvt*foreground: #FFFFFF
+!    URxvt*color0: #000000
+!    URxvt*color1: #A80000
+!    URxvt*color2: #00A800
+!    URxvt*color3: #A85400
+!    URxvt*color4: #0000A8
+!    URxvt*color5: #A800A8
+!    URxvt*color6: #00A8A8
+!    URxvt*color7: #A8A8A8
+!    URxvt*color8: #545054
+!    URxvt*color9: #F85450
+!    URxvt*color10: #50FC50
+!    URxvt*color11: #F2FC50
+!    URxvt*color12: #5054F8
+!    URxvt*color13: #F854F8
+!    URxvt*color14: #50FCF8
+!    URxvt*color15: #F0EFE7
+    
+! Solarized color scheme for the X Window System
+!
+! http://ethanschoonover.com/solarized
+
+
+! Common
+
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+
+! Dark
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #d9d9d9
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+
+! Light
+
+! #define S_base03        #fdf6e3
+! #define S_base02        #eee8d5
+! #define S_base01        #93a1a1
+! #define S_base00        #839496
+! #define S_base0         #657b83
+! #define S_base1         #586e75
+! #define S_base2         #073642
+! #define S_base3         #002b36
+
+
+! To only apply colors to your terminal, for example, prefix
+! the color assignment statement with its name. Example:
+!
+! URxvt*background:            S_base03
+
+!*background:              S_base03
+*foreground:              S_base0
+!*fading:                  40
+!*fadeColor:               S_base03
+*cursorColor:             S_base1
+*pointerColorBackground:  S_base01
+*pointerColorForeground:  S_base1
+
+*color0:                  S_base02
+*color1:                  S_red
+*color2:                  S_green
+*color3:                  S_yellow
+*color4:                  S_blue
+*color5:                  S_magenta
+*color6:                  S_cyan
+*color7:                  S_base2
+*color8:                  S_base03
+*color9:                  S_orange
+*color10:                 S_base01
+*color11:                 S_base00
+*color12:                 S_base0
+*color13:                 S_violet
+*color14:                 S_base1
+*color15:                 S_base3
+
+/* Scrolling in urxvt -------------------------------------------------------
+ * Scrolling on wheel mouse: 4 Lines normally, half a page with shift */
+      XTerm.vt100.translations: #override\n\ 
+!      <Btn4Down>,<Btn4Up>:scroll-back(1,line)\n\ 
+!      <Btn5Down>,<Btn5Up>:scroll-forw(1,line)\n\ 
+      Ctrl<Btn4Down>,<Btn4Up>:scroll-back(1,page)\n\ 
+      Ctrl<Btn5Down>,<Btn5Up>:scroll-forw(1,page)\n\ 
+Shift<Btn4Down>,<Btn4Up>:scroll-back(1,halfpage)\n\ 
+Shift<Btn5Down>,<Btn5Up>:scroll-forw(1,halfpage)\n\ 
+None<Btn4Down>,<Btn4Up>:scroll-one-line-down()scroll-one-line-down()scroll-one-line-down()scroll-one-line-down()scroll-one-line-down()\n\ 
+None<Btn5Down>,<Btn5Up>:scroll-one-line-up()scroll-one-line-up()scroll-one-line-up()scroll-one-line-up()scroll-one-line-up()\n\      
+
+
+/* In the scrollbar we map buttons 5 & 4 to 1 and 2 otherwise, core dump.
+ * This will move proportionnaly to cursor position but we dont know how to 
+ * program the same exact behavior as in the text widget. */
+      XTerm.vt100.Scrollbar.translations: #override\n\ 
+      <Btn5Down>: StartScroll(Forward)\n\ 
+      <Btn4Down>: StartScroll(Backward)\n\
+
+
+!xcalc-----------------------------------------------------------------------
+
+xcalc*geometry:                        200x275
+xcalc.ti.bevel.background:             #111111
+xcalc.ti.bevel.screen.background:      #000000
+xcalc.ti.bevel.screen.DEG.background:  #000000
+xcalc.ti.bevel.screen.DEG.foreground:  LightSeaGreen
+xcalc.ti.bevel.screen.GRAD.background: #000000
+xcalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.RAD.background:  #000000
+xcalc.ti.bevel.screen.RAD.foreground:  LightSeaGreen
+xcalc.ti.bevel.screen.INV.background:  #000000
+xcalc.ti.bevel.screen.INV.foreground:  Red
+xcalc.ti.bevel.screen.LCD.background:  #000000
+xcalc.ti.bevel.screen.LCD.foreground:  LightSeaGreen
+xcalc.ti.bevel.screen.LCD.shadowWidth: 0
+xcalc.ti.bevel.screen.M.background:    #000000
+xcalc.ti.bevel.screen.M.foreground:    LightSeaGreen
+xcalc.ti.bevel.screen.P.background:    #000000
+xcalc.ti.bevel.screen.P.foreground:    Yellow
+xcalc.ti.Command.foreground:  White
+xcalc.ti.Command.background:  #777777
+xcalc.ti.button5.background:  Orange3
+xcalc.ti.button19.background: #611161
+xcalc.ti.button18.background: #611161
+xcalc.ti.button20.background: #611111
+!uncomment to change label on division button
+xcalc.ti.button20.label:      /
+xcalc.ti.button25.background: #722222
+xcalc.ti.button30.background: #833333
+xcalc.ti.button35.background: #944444
+xcalc.ti.button40.background: #a55555
+xcalc.ti.button22.background: #222262
+xcalc.ti.button23.background: #222262
+xcalc.ti.button24.background: #222272
+xcalc.ti.button27.background: #333373
+xcalc.ti.button28.background: #333373
+xcalc.ti.button29.background: #333373
+xcalc.ti.button32.background: #444484
+xcalc.ti.button33.background: #444484
+xcalc.ti.button34.background: #444484
+xcalc.ti.button37.background: #555595
+xcalc.ti.button38.background: #555595
+xcalc.ti.button39.background: #555595
+XCalc*Cursor:                 hand2
+XCalc*ShapeStyle:             rectangle
+
+
