@@ -5,7 +5,8 @@ xsetroot -cursor_name left_ptr &
 numlockx &
 smount -a &
 export DE="gnome" &
-nitrogen --restore &
+hsetroot -solid "#fdf6e3" -tile /media/sarai/pics/nitrogen/pattern.png & 
+#nitrogen --restore &
 compton --config /home/stephen/.config/Compton/compton.conf &
 mpd --no-daemon &
 #tint2 &
@@ -17,3 +18,6 @@ sxhkd &
 #mkfifo "$PANEL_FIFO"
 #exec bspwm -s "$PANEL_FIFO" -p W
 exec bspwm
+#exec dbus-launch openbox-session
+#exec herbstluftwm
+#exec ck-launch-session dbus-launch $HOME/scripts/.start-fusion.sh

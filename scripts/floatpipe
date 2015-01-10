@@ -1,0 +1,8 @@
+#!/bin/env bash
+
+cd $(dirname $0)
+
+font="Sauce Code Powerline-9"
+icon="FontAwesome-10"
+
+./floatbar | bar-aint-recursive -g 1882x20+1452+12 -f "$font","$icon" -F "#FFd9d9d9" -B "#FF1f1f1f" | bash

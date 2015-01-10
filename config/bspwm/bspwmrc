@@ -19,13 +19,13 @@ bspc config right_padding 50
 bspc config left_padding 50
 bspc config bottom_padding 50
 
-bspc monitor DVI-0 -d ▀▄ ▀▄ ▀▄
-bspc monitor VGA-0 -d ▀▄ ▀▄ ▀▄
+bspc monitor VGA-0 -d I II III
+#bspc monitor DVI-0 -d ▀▄ ▀▄ ▀▄
+bspc monitor DVI-0 -d IV V VI
+#bspc monitor VGA-0 -d ▀▄ ▀▄ ▀▄
 
-#bspc monitor -d www i ii iii iv mail term
-#${HOME}/.config/bspwm/panel
-#${HOME}/.barscripts/panel
+${HOME}/scripts/floatpipe
 thunar --daemon &
-tint2 &
-pasystray &
-nm-applet --sm-disable
+#tint2 &
+#pasystray &
+#nm-applet --sm-disable

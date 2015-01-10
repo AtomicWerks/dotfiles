@@ -134,6 +134,8 @@ super + x
 
 alt + space
   ${HOME}/.config/bspwm/dmenuwrapper2
+super + space
+  ${HOME}/scripts/launcher
 # make sxhkd reload its configuration files:
 super + Escape
   pkill -USR1 -x sxhkd
