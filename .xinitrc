@@ -18,6 +18,3 @@ sxhkd &
 #mkfifo "$PANEL_FIFO"
 #exec bspwm -s "$PANEL_FIFO" -p W
 exec bspwm
-#exec dbus-launch openbox-session
-#exec herbstluftwm
-#exec ck-launch-session dbus-launch $HOME/scripts/.start-fusion.sh
