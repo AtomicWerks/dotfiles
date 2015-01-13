@@ -116,6 +116,9 @@ VBOX_USB=usbfs
 #export JAVA_HOME=/opt/java6/
 #export PATH=$PATH:$JAVA_HOME/bin
 
+#scripts
+export PATH=$PATH:/home/stephen/scripts
+
 #local bin
 export PATH=$PATH:/home/stephen/.local/bin
 #bspwm panel
@@ -161,19 +164,23 @@ alias smount='sudo mount'
 alias mkdir='mkdir -p -v'
 alias ping='ping -c 5'
 alias ..='cd ..'
-alias scat='sudo cat'
+alias scat='sudo pygmentize -g'
+alias cat='pygmentize -g'
 alias reboot='sudo reboot'
 alias svim='sudo vim'
 alias grep='grep --color=auto'
 alias yao='yaourt'
 alias pac='sudo pacman'
 alias pacs='sudo pacman -Sy'
-alias pacsearch="pacman -Sl | cut -d' ' -f2 | grep "
+alias pacsearch='pacman -Sl | cut -d' ' -f2 | grep'
 alias pacup="sudo pacman -Syu"
 alias ":q"="exit"
 alias ls='ls --color=auto'
 alias rc.d='sudo rc.d'
 alias c='clear'
+
+#screenfetch
+alias rice='alsi -f ~/scripts/info-at -l'
 
 #go-mtpfs for nexus
 alias nexus='go-mtpfs /media/nexus'
@@ -183,14 +190,14 @@ alias nonexus='fusermount -u /media/nexus'
 
 
 #dir_colors
-eval $(dircolors -b /etc/dir_colors)
+eval $(dircolors -b ~/.dircolors)
 
 
 # usage: ternary <evaluate> <true return> <false return>
 ternary () {
         [[ $1 -eq 0 ]] && printf $2 || printf $3
 }
-PROMPT="%{$fg[black]%(! $fg[red] )-$fg[black]%(1j $fg[green] )-$fg[black]%(?  $fg[red])-$reset_color%} "
+PROMPT="%{$fg[0]%(! $fg[red] )─$fg[0]%(1j $fg[green] )─$fg[0]%(?  $fg[red])─$reset_color%} "
 
 
 w3mimg () { w3m -o imgdisplay=/usr/lib/w3m/w3mimgdisplay $1 }

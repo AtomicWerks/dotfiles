@@ -1,0 +1,17 @@
+item = Terminal
+cmd = urxvt
+icon = NULL
+
+item = Browser
+cmd = chromium
+icon = NULL
+
+item = Filemanager
+cmd = thunar
+icon = NULL
+
+item = Settings
+cmd = xfce4-settings-manager
+icon = NULL
+
+separator

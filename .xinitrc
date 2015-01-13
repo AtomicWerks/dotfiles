@@ -5,8 +5,8 @@ xsetroot -cursor_name left_ptr &
 numlockx &
 smount -a &
 export DE="gnome" &
-hsetroot -solid "#fdf6e3" -tile /media/sarai/pics/nitrogen/pattern.png & 
-#nitrogen --restore &
+#hsetroot -solid "#fdf6e3" -tile /media/sarai/pics/nitrogen/pattern.png & 
+nitrogen --restore &
 compton --config /home/stephen/.config/Compton/compton.conf &
 mpd --no-daemon &
 #tint2 &

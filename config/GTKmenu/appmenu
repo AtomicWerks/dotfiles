@@ -1,0 +1,519 @@
+item = Terminal
+cmd = urxvt
+icon = NULL
+
+item = Browser
+cmd = chromium
+icon = NULL
+
+item = Filemanager
+cmd = thunar
+icon = NULL
+
+item = Settings
+cmd = xfce4-settings-manager
+icon = NULL
+
+separator
+Submenu = Development
+	icon = NULL
+
+	item = Android SDK
+	cmd = android
+	icon = NULL
+
+	item = Geany
+	cmd = geany
+	icon = NULL
+
+	item = OpenJDK Monitoring & Management Console
+	cmd = jconsole
+	icon = NULL
+
+	item = OpenJDK Policy Tool
+	cmd = policytool
+	icon = NULL
+
+	item = Qt4 Assistant
+	cmd = assistant-qt4
+	icon = NULL
+
+	item = Qt4 Linguist
+	cmd = linguist-qt4
+	icon = NULL
+
+	item = Qt4 QDbusViewer
+	cmd = qdbusviewer-qt4
+	icon = NULL
+
+Submenu = Games
+	icon = NULL
+
+	Submenu = Arcade
+		icon = NULL
+
+		item = 'Yo Frankie!'
+		cmd = yofrankie.sh
+		icon = NULL
+
+Submenu = Graphics
+	icon = NULL
+
+	item = Darktable
+	cmd = darktable
+	icon = NULL
+
+	item = Feh
+	cmd = feh
+	icon = NULL
+
+	item = GNU Image Manipulation Program
+	cmd = gimp-2.8
+	icon = NULL
+
+	item = Image Viewer
+	cmd = gpicview
+	icon = NULL
+
+	item = Nitrogen
+	cmd = nitrogen
+	icon = NULL
+
+	item = Pinta
+	cmd = pinta
+	icon = NULL
+
+	item = Shotwell
+	cmd = shotwell
+	icon = NULL
+
+Submenu = Multimedia
+	icon = NULL
+
+	item = Ario
+	cmd = ario
+	icon = NULL
+
+	item = Audacity
+	cmd = audacity
+	icon = NULL
+
+	item = EasyTAG
+	cmd = easytag
+	icon = NULL
+
+	item = gtk-recordMyDesktop
+	cmd = gtk-recordMyDesktop
+	icon = NULL
+
+	item = HandBrake
+	cmd = ghb
+	icon = NULL
+
+	item = JACK Rack
+	cmd = jack-rack
+	icon = NULL
+
+	item = JAMin
+	cmd = jamin
+	icon = NULL
+
+	item = PulseAudio Manager
+	cmd = paman
+	icon = NULL
+
+	item = PulseAudio System Tray
+	cmd = pasystray
+	icon = NULL
+
+	item = PulseAudio Volume Control
+	cmd = pavucontrol
+	icon = NULL
+
+	item = QjackCtl
+	cmd = qjackctl
+	icon = NULL
+
+	item = SMPlayer
+	cmd = smplayer
+	icon = NULL
+
+	item = Sound Converter
+	cmd = soundconverter
+	icon = NULL
+
+Submenu = Network
+	icon = NULL
+
+	item = Avahi SSH Server Browser
+	cmd = bssh
+	icon = NULL
+
+	item = Avahi VNC Server Browser
+	cmd = bvnc
+	icon = NULL
+
+	item = Chromium
+	cmd = chromium
+	icon = NULL
+
+	item = Google Earth
+	cmd = google-earth
+	icon = NULL
+
+	item = gPodder
+	cmd = gpodder
+	icon = NULL
+
+	item = Luakit
+	cmd = luakit
+	icon = NULL
+
+	item = Mail Reader
+	cmd = exo-open --launch MailReader
+	icon = NULL
+
+	item = Vidalia
+	cmd = vidalia
+	icon = NULL
+
+	item = Web Browser
+	cmd = exo-open --launch WebBrowser
+	icon = NULL
+
+Submenu = Office
+	icon = NULL
+
+	item = Adobe Reader 9
+	cmd = acroread
+	icon = NULL
+
+	item = LibreOffice Impress
+	cmd = libreoffice
+	icon = NULL
+
+	item = Texmaker
+	cmd = texmaker
+	icon = NULL
+
+	item = Wordview Microsoft doc Viewer
+	cmd = wordview
+	icon = NULL
+
+	item = Zathura
+	cmd = zathura
+	icon = NULL
+
+Submenu = Other
+	icon = NULL
+
+	item = Amnesia - The Dark Descent
+	cmd = /opt/Amnesia/Launcher.bin64
+	icon = NULL
+
+	item = Amnesia - The Dark Descent - Manual
+	cmd = xdg-open "file:///opt/Amnesia/Manual_en.pdf"
+	icon = NULL
+
+	item = Amnesia - The Dark Descent - Remember
+	cmd = xdg-open "file:///opt/Amnesia/Remember - Short Story Collection.pdf"
+	icon = NULL
+
+	item = AUR
+	cmd = xdg-open https://aur.archlinux.org
+	icon = NULL
+
+	item = Bugs
+	cmd = xdg-open https://bugs.archlinux.org
+	icon = NULL
+
+	item = compton
+	cmd = compton
+	icon = NULL
+
+	item = Conky Manager
+	cmd = conky-manager
+	icon = NULL
+
+	item = CPU-G
+	cmd = cpu-g
+	icon = NULL
+
+	item = Developers
+	cmd = xdg-open http://www.archlinux.org/developers/
+	icon = NULL
+
+	item = Documentation
+	cmd = xdg-open https://wiki.archlinux.org/index.php/Official_Arch_Linux_Install_Guide
+	icon = NULL
+
+	item = Donate
+	cmd = xdg-open http://www.archlinux.org/donate/
+	icon = NULL
+
+	item = Forum
+	cmd = xdg-open https://bbs.archlinux.org
+	icon = NULL
+
+	item = Homepage
+	cmd = xdg-open http://www.archlinux.org
+	icon = NULL
+
+	item = IcedTea-Web Control Panel
+	cmd = itweb-settings
+	icon = NULL
+
+	item = Minetest
+	cmd = minetest
+	icon = NULL
+
+	item = Psychonauts
+	cmd = psychonauts
+	icon = NULL
+
+	item = PulseAudio Preferences
+	cmd = paprefs
+	icon = NULL
+
+	item = Qt V4L2 test Utility
+	cmd = qv4l2
+	icon = NULL
+
+	item = Schwag
+	cmd = xdg-open http://www.zazzle.com/archlinux/
+	icon = NULL
+
+	item = SVN
+	cmd = xdg-open http://projects.archlinux.org/svntogit/
+	icon = NULL
+
+	item = System Profiler and Benchmark
+	cmd = hardinfo
+	icon = NULL
+
+	item = Tor-Browser (en-US)
+	cmd = tor-browser-en
+	icon = NULL
+
+	item = Wiki
+	cmd = xdg-open https://wiki.archlinux.org
+	icon = NULL
+
+Submenu = Science
+	icon = NULL
+
+	item = gEDA Attribute Editor
+	cmd = gattrib
+	icon = NULL
+
+	item = gEDA Schematic Editor
+	cmd = gschem
+	icon = NULL
+
+Submenu = Shells
+	icon = NULL
+
+	item = Oracle VM VirtualBox
+	cmd = VirtualBox
+	icon = NULL
+
+	item = Root Terminal
+	cmd = gksu -l gnome-terminal
+	icon = NULL
+
+	item = rxvt-unicode
+	cmd = termite
+	icon = NULL
+
+	item = Termite
+	cmd = termite
+	icon = NULL
+
+	item = Thunar File Manager
+	cmd = thunar
+	icon = NULL
+
+	item = UXTerm
+	cmd = uxterm
+	icon = NULL
+
+	item = XTerm
+	cmd = xterm
+	icon = NULL
+
+Submenu = System
+	icon = NULL
+
+	Submenu = Settings
+		icon = NULL
+
+		Submenu = GNOME
+			icon = NULL
+
+			item = 3D Acceleration
+			cmd = driconf
+			icon = NULL
+
+			item = Network Connections
+			cmd = nm-connection-editor
+			icon = NULL
+
+			item = Privilege granting
+			cmd = gksu-properties
+			icon = NULL
+
+		Submenu = Xfce
+			icon = NULL
+
+			item = Settings Manager
+			cmd = xfce4-settings-manager
+			icon = NULL
+
+		item = Accessibility
+		cmd = xfce4-accessibility-settings
+		icon = NULL
+
+		item = Appearance
+		cmd = xfce4-appearance-settings
+		icon = NULL
+
+		item = ARandR
+		cmd = arandr
+		icon = NULL
+
+		item = Customize Look and Feel
+		cmd = lxappearance
+		icon = NULL
+
+		item = Display
+		cmd = xfce4-display-settings
+		icon = NULL
+
+		item = File Manager
+		cmd = thunar-settings
+		icon = NULL
+
+		item = Keyboard
+		cmd = xfce4-keyboard-settings
+		icon = NULL
+
+		item = Manage Printing
+		cmd = xdg-open http://localhost:631/
+		icon = NULL
+
+		item = MIME Type Editor
+		cmd = xfce4-mime-settings
+		icon = NULL
+
+		item = Monitor Settings
+		cmd = lxrandr
+		icon = NULL
+
+		item = Mouse and Touchpad
+		cmd = xfce4-mouse-settings
+		icon = NULL
+
+		item = Notifications
+		cmd = xfce4-notifyd-config
+		icon = NULL
+
+		item = Openbox Configuration Manager
+		cmd = obconf
+		icon = NULL
+
+		item = Preferred Applications
+		cmd = exo-preferred-applications
+		icon = NULL
+
+		item = Removable Drives and Media
+		cmd = thunar-volman-settings
+		icon = NULL
+
+		item = Settings Editor
+		cmd = xfce4-settings-editor
+		icon = NULL
+
+		item = systemadm
+		cmd = systemadm
+		icon = NULL
+
+	item = Avahi Zeroconf Browser
+	cmd = avahi-discover
+	icon = NULL
+
+	item = BleachBit
+	cmd = bleachbit
+	icon = NULL
+
+	item = Bulk Rename
+	cmd = /usr/lib/Thunar/ThunarBulkRename
+	icon = NULL
+
+	item = dconf Editor
+	cmd = dconf-editor
+	icon = NULL
+
+	item = GParted
+	cmd = gparted_polkit
+	icon = NULL
+
+	item = Htop
+	cmd = termite -e htop
+	icon = NULL
+
+	item = LSHW
+	cmd = gtk-lshw
+	icon = NULL
+
+	item = UNetbootin
+	cmd = unetbootin_polkit
+	icon = NULL
+
+	item = WinUSB
+	cmd = winusbgui
+	icon = NULL
+
+	item = Xsensors
+	cmd = xsensors
+	icon = NULL
+
+Submenu = Utilities
+	icon = NULL
+
+	item = 7-Zip FM
+	cmd = 7zFM
+	icon = NULL
+
+	item = aafm
+	cmd = aafm
+	icon = NULL
+
+	item = About Xfce
+	cmd = xfce4-about
+	icon = NULL
+
+	item = Archive Manager
+	cmd = file-roller
+	icon = NULL
+
+	item = File Manager
+	cmd = exo-open --launch FileManager
+	icon = NULL
+
+	item = Screenshot
+	cmd = gnome-screenshot --interactive
+	icon = NULL
+
+	item = Terminal Emulator
+	cmd = exo-open --launch TerminalEmulator
+	icon = NULL
+
+	item = Xarchiver
+	cmd = xarchiver
+	icon = NULL
+
+separator
+
+item = Update menu
+cmd = update_menu.sh
+icon = NULL

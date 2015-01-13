@@ -1,0 +1,12 @@
+#!/bin/env bash
+
+#font="-gohu-gohufont-medium-r-normal-*-14-100-100-100-c-80-iso8859-1"
+font="Sauce Code Powerline-9"
+
+if [[ $(bspc query -M -d focused) == "VGA-0" ]];
+then
+    dmenu_run -class dmenu -i -h 20 -y 12 -x 1718 -w 240 -q -p ">" -fn "$font" -nb "#1f1f1f" -nf "#d9d9d9" -sb "#1f1f1f" -sf "#bd5049"
+else
+    dmenu_run -class dmenu -i -h 20 -y 12 -x 278 -w 240 -q -p ">" -fn "$font" -nb "#1f1f1f" -nf "#d9d9d9" -sb "#1f1f1f" -sf "#bd5049"
+fi
+

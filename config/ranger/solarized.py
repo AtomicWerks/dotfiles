@@ -17,44 +17,45 @@ class Solarized(ColorScheme):
             return default_colors
 
         elif context.in_browser:
-            fg = 244
+            fg = 12
             if context.selected:
                 attr = reverse
             else:
                 attr = normal
             if context.empty or context.error:
-                bg = red
+                bg = 1
             if context.border:
                 fg = 0
             if context.media:
                 if context.image:
-                    fg = 136
+                    fg = 3
                 else:
-                    fg = 166
+                    fg = 9
             if context.container:
-                fg = 61
+                fg = 13
             if context.directory:
-                fg = 33
+                fg = 4
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
-                fg = 64
+                fg = 2
                 attr |= bold
             if context.socket:
-                fg = 136
-                bg = 230
+                fg = 3
+                bg = 12
                 attr |= bold
             if context.fifo:
                 fg = 136
-                bg = 230
+                bg = 12
                 attr |= bold
             if context.device:
-                fg = 244
-                bg = 230
+                fg = 10
+                bg = 12
+
                 attr |= bold
             if context.link:
-                fg = context.good and 37 or 160
-                bg = context.bad and 235 or 235
+                fg = context.good and 6 or 1
+                bg = context.bad and 234 or 0
                 attr |= bold
             if context.tag_marker and not context.selected:
                 attr |= bold
@@ -83,10 +84,10 @@ class Solarized(ColorScheme):
                 fg = context.bad and 3 or 3
                 bg = context.bad and 234 or 234
             elif context.directory:
-                fg = 33
+                fg = 4
             elif context.tab:
                 fg = context.good and 3 or 3
-                bg = 235
+                bg = 234
             elif context.link:
                 fg = default
 
@@ -95,15 +96,15 @@ class Solarized(ColorScheme):
                 if context.good:
                     fg = 3
                 elif context.bad:
-                    fg = 160
+                    fg = 1
             if context.marked:
                 attr |= bold | reverse
-                fg = 237
+                fg = 3
             if context.message:
                 if context.bad:
                     attr |= bold
-                    fg = 160
-                    bg = 235
+                    fg = 1
+                    bg = 234
             if context.loaded:
                 bg = self.progress_bar_color
 
@@ -113,7 +114,7 @@ class Solarized(ColorScheme):
 
         if context.in_taskview:
             if context.title:
-                fg = 93
+                fg = 13
 
             if context.selected:
                 attr |= reverse

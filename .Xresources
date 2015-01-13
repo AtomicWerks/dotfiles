@@ -1,10 +1,10 @@
-
-Xft.dpi:                96
+Xft.autohint:           1
+Xft/dpi:                96
 Xft.antialias:          1
 Xft.hinting:            1
-Xft.hintstyle: 			hintfull
-Xft.lcdfilter: 			lcddefault
-Xft.rgba: 				rgb
+Xft.hintstyle:          hintslight
+Xft.lcdfilter:          lcddefault
+Xft.rgba:               rgb
 
 
 
@@ -14,7 +14,7 @@ mouseWheelScrollPage: true
 URxvt*perl-ext-common:      default,matcher,searchable-scrollback
 URxvt*matcher.button:       1
 !URxvt*matcher.pattern.1:    \bwww\.[\w-]\.[\w./?&@#-]*[\w/-]
-URxvt.url-launcher:    /usr/bin/chromium
+URxvt.url-launcher:    /usr/bin/luakit
 URxvt*perl-lib: /usr/lib/urxvt/perl/
 URxvt*cursorUnderline: true
 URxvt*colorMode: on
@@ -105,7 +105,7 @@ URxvt.intensityStyles: false
 #define S_base02        #073642
 #define S_base01        #586e75
 #define S_base00        #657b83
-#define S_base0         #d9d9d9
+#define S_base0         #839496
 #define S_base1         #93a1a1
 #define S_base2         #eee8d5
 #define S_base3         #fdf6e3
@@ -136,21 +136,29 @@ URxvt.intensityStyles: false
 *pointerColorBackground:  S_base01
 *pointerColorForeground:  S_base1
 
+!Black
 *color0:                  S_base02
-*color1:                  S_red
-*color2:                  S_green
-*color3:                  S_yellow
-*color4:                  S_blue
-*color5:                  S_magenta
-*color6:                  S_cyan
-*color7:                  S_base2
 *color8:                  S_base03
+!Red
+*color1:                  S_red
 *color9:                  S_orange
+!Green
+*color2:                  S_green
 *color10:                 S_base01
+!Yellow
+*color3:                  S_yellow
 *color11:                 S_base00
+!Blue
+*color4:                  S_blue
 *color12:                 S_base0
+!Magenta
+*color5:                  S_magenta
 *color13:                 S_violet
+!Cyan
+*color6:                  S_cyan
 *color14:                 S_base1
+!White
+*color7:                  S_base2
 *color15:                 S_base3
 
 /* Scrolling in urxvt -------------------------------------------------------
@@ -177,26 +185,28 @@ None<Btn5Down>,<Btn5Up>:scroll-one-line-up()scroll-one-line-up()scroll-one-line-
 !xcalc-----------------------------------------------------------------------
 
 xcalc*geometry:                        200x275
-xcalc.ti.bevel.background:             #111111
-xcalc.ti.bevel.screen.background:      #000000
-xcalc.ti.bevel.screen.DEG.background:  #000000
-xcalc.ti.bevel.screen.DEG.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.GRAD.background: #000000
-xcalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
-xcalc.ti.bevel.screen.RAD.background:  #000000
-xcalc.ti.bevel.screen.RAD.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.INV.background:  #000000
+xcalc.ti.background:                   #1f1f1f
+xcalc.ti.bevel.background:             #1f1f1f
+xcalc.ti.bevel.screen.background:      #002b36
+xcalc.ti.bevel.screen.DEG.background:  #002b36
+xcalc.ti.bevel.screen.DEG.foreground:  #d9d9d9
+xcalc.ti.bevel.screen.GRAD.background: #002b36
+xcalc.ti.bevel.screen.GRAD.foreground: Blue
+xcalc.ti.bevel.screen.RAD.background:  #002b36
+xcalc.ti.bevel.screen.RAD.foreground:  Blue
+xcalc.ti.bevel.screen.INV.background:  #002b36
 xcalc.ti.bevel.screen.INV.foreground:  Red
-xcalc.ti.bevel.screen.LCD.background:  #000000
-xcalc.ti.bevel.screen.LCD.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.LCD.shadowWidth: 0
-xcalc.ti.bevel.screen.M.background:    #000000
-xcalc.ti.bevel.screen.M.foreground:    LightSeaGreen
-xcalc.ti.bevel.screen.P.background:    #000000
+xcalc.ti.bevel.screen.LCD.background:  #002b36
+xcalc.ti.bevel.screen.LCD.foreground:  #d9d9d9
+xcalc.ti.bevel.screen.LCD.shadowWidth: 1
+xcalc.ti.bevel.screen.M.background:    #002b36
+xcalc.ti.bevel.screen.M.foreground:    Blue
+xcalc.ti.bevel.screen.P.background:    #002b36
 xcalc.ti.bevel.screen.P.foreground:    Yellow
-xcalc.ti.Command.foreground:  White
+xcalc.ti.Command.foreground:  #d9d9d9
 xcalc.ti.Command.background:  #777777
-xcalc.ti.button5.background:  Orange3
+xcalc.ti.button5.background:  Orange
+xcalc.ti.button5.foreground:  #002b36
 xcalc.ti.button19.background: #611161
 xcalc.ti.button18.background: #611161
 xcalc.ti.button20.background: #611111
@@ -220,5 +230,4 @@ xcalc.ti.button38.background: #555595
 xcalc.ti.button39.background: #555595
 XCalc*Cursor:                 hand2
 XCalc*ShapeStyle:             rectangle
-
 
