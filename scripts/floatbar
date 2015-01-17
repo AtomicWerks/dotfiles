@@ -1,7 +1,7 @@
 #!/bin/env bash
 
-fg="%{F#FFd9d9d9}"
-bg="%{F#FF222222}"
+fg="%{F#FF839496}"
+bg="%{F#FF1f1f1f}"
 hi="%{F#FFbd5049}"
 green="%{F#FF808d49}"
 yellow="%{F#FFb98d50}"
@@ -68,7 +68,7 @@ while :; do
   buf="$buf %{c}"
   buf="$buf $(desktops)"
   buf="$buf %{r}"
-  buf="$buf $(apps)"
+#  buf="$buf $(apps)"
 #  buf="$buf $green$fg $(batt)%"
   buf="$buf $blue$fg $(vol)"
   buf="$buf $yellow$fg $(clock)"

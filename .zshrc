@@ -147,6 +147,30 @@ export R600_SURF=1
 export RADEON_HYPERZ=1
 export R600_DEBUG=hyperz
 
+#infinality
+export INFINALITY_FT_AUTOHINT_HORIZONTAL_STEM_DARKEN_STRENGTH=0
+export INFINALITY_FT_BOLD_EMBOLDEN_X_VALUE=0
+export INFINALITY_FT_AUTOHINT_VERTICAL_STEM_DARKEN_STRENGTH=0
+export INFINALITY_FT_CONTRAST=0
+export INFINALITY_FT_GRAYSCALE_FILTER_STRENGTH=0
+export INFINALITY_FT_FRINGE_FILTER_STRENGTH=0
+export INFINALITY_FT_USE_VARIOUS_TWEAKS=true
+export INFINALITY_FT_BRIGHTNESS=0
+export INFINALITY_FT_GAMMA_CORRECTION='15 90'
+export INFINALITY_FT_FILTER_PARAMS='07 24 35 24 07'
+export INFINALITY_FT_USE_KNOWN_SETTINGS_ON_SELECTED_FONTS=true
+export INFINALITY_FT_STEM_SNAPPING_SLIDING_SCALE=0
+export INFINALITY_FT_WINDOWS_STYLE_SHARPENING_STRENGTH=0
+export INFINALITY_FT_CHROMEOS_STYLE_SHARPENING_STRENGTH=30
+export INFINALITY_FT_STEM_ALIGNMENT_STRENGTH=0
+export INFINALITY_FT_AUTOHINT_SNAP_STEM_HEIGHT=0
+export INFINALITY_FT_BOLD_EMBOLDEN_Y_VALUE=0
+export INFINALITY_FT_GLOBAL_EMBOLDEN_Y_VALUE=0
+export INFINALITY_FT_STEM_FITTING_STRENGTH=0
+export INFINALITY_FT_AUTOHINT_INCREASE_GLYPH_HEIGHTS=false
+export INFINALITY_FT_GLOBAL_EMBOLDEN_X_VALUE=0
+
+
 #Qt5 gtk look
 export QT_STYLE_OVERRIDE=gtk
 
@@ -175,12 +199,12 @@ alias pacs='sudo pacman -Sy'
 alias pacsearch='pacman -Sl | cut -d' ' -f2 | grep'
 alias pacup="sudo pacman -Syu"
 alias ":q"="exit"
-alias ls='ls --color=auto'
+alias ls='ls -a --color=auto'
 alias rc.d='sudo rc.d'
 alias c='clear'
 
 #screenfetch
-alias rice='alsi -f ~/scripts/info-at -l'
+alias rice='alsi -f ~/scripts/atomicwerks -l'
 
 #go-mtpfs for nexus
 alias nexus='go-mtpfs /media/nexus'
@@ -188,6 +212,8 @@ alias nonexus='fusermount -u /media/nexus'
 #rsync nexus
 #alias rsyncnexus='rsync -avz --exclude '*.mp3' /media/nexus/Internal\ storage/ /media/sarai/android/nexus_backup/'
 
+#Xelatex
+alias xelatexmk='latexmk -xelatex -pdf -pvc'
 
 #dir_colors
 eval $(dircolors -b ~/.dircolors)
